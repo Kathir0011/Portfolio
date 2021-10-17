@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home- Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body >
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu" ><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white"style="border-radius: 40px;">Home</a>
+    <a href="mvk.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" style="border-radius: 40px;margin-left:10px">Muthu Vishal</a>
+    <a href="surya.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"style="border-radius: 40px;margin-left:10px">Surya</a>
+    <a href="kathir.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"style="border-radius: 40px;margin-left:10px">Kathir</a>
+    <a href="athithyan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"style="border-radius: 40px;margin-left:10px">Athithyan</a>
+    <a href="saravanan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"style="border-radius: 40px;margin-left:10px">Saravanan</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large"style="border-radius: 40px;">Muthu Vishal</a>
+    <a href="surya.html" class="w3-bar-item w3-button w3-padding-large"style="border-radius: 40px;">Surya</a>
+    <a href="kathir.html" class="w3-bar-item w3-button w3-padding-large"style="border-radius: 40px;">Kathir</a>
+    <a href="athithyan.html" class="w3-bar-item w3-button w3-padding-large"style="border-radius: 40px;">Athithyan</a>
+    <a href="saravanan.html" class="w3-bar-item w3-button w3-padding-large"style="border-radius: 40px;">Saravanan</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px;border:5px solid white;border-radius: 40px;">
+  <h1 class="w3-margin w3-jumbo">WELCOME</h1>
+  <p class="w3-xlarge">This is Team Marvel for you</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:black;border:5px solid white;border-radius: 40px;" id="lo">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 style="color:white" >About our Website</h1>
+      <h5 class="w3-padding-32" style="color:white">Let’s start by defining what a portfolio website is. At its most basic form, a portfolio website provides professional information about an individual or a company and presents a showcase of their work.</h5>
+
+      <p class="" style="color:white">In the design process, the first step should be a statement of purpose. 
+        Answering the question Why are we doing this? should be done before any work is started. 
+        By specifying the purpose of a design, the process becomes meaningful.
+        In the portfolio websites I’ll talk about, you’ll see the same primary purpose: 
+        To display compelling content and to provide basic information in a way that leads to getting more clients.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:black;border:5px solid white;border-radius: 40px;">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird" >
+      <h1 style="color:white;">A showcase of your work.</h1>
+      <h5 class="w3-padding-32" style="color:white">This Website is designed only with HTML and CSS .</h5>
+
+      <p class="" style="color:white;">If you want to create a well designed and attractive websites, please contact us.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-center w3-padding-74 w3-red"style=";border-radius:40px;">
+    <h1 class="w3-margin w3-xlarge"style="color:white">Live life</h1>
+    <h2 style="color:white">Always have Fun</h2>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
